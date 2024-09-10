@@ -25,7 +25,8 @@ public class GooglePage extends BasePage{
         page.locator("(//input[@value='Google Search'])[2]").click();
     }
 
-    public void verifySearchPage() {
+    public void verifySearchPage() throws InterruptedException {
         Assert.assertEquals("hello","hello");
+        Thread.sleep(4000);
     }
 }
