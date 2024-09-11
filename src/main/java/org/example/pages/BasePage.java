@@ -7,7 +7,8 @@ public class BasePage {
     public Page initialise(){
         Playwright playwright = Playwright.create();
         Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions()
-                .setHeadless(false));;
+                .setHeadless(false));
+        System.out.println("hello new quality issue");
         return browser.newPage();
     }
 }
