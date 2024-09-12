@@ -34,7 +34,7 @@ public class GoogleStepDefinitions {
     }
 
     @Then("user should be navigated to search results page")
-    public void userShouldBeNavigatedToSearchResultsPage() {
+    public void userShouldBeNavigatedToSearchResultsPage() throws InterruptedException {
         googlePage.verifySearchPage();
     }
 }
