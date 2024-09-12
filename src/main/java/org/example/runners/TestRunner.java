@@ -12,16 +12,13 @@ import org.junit.runner.RunWith;
         testOutput = CourgetteTestOutput.CONSOLE,
         reportTargetDir = "target",
         reportTitle = "DHL MyGTS Automation Report",
-        plugin = { CourgettePlugin.EXTENT_REPORTS },
+        plugin = {CourgettePlugin.EXTENT_REPORTS},
         cucumberOptions = @CucumberOptions(
                 features = "src/test/resources/",
                 glue = "org/example/stepdefinitions",
                 tags = "@google",
                 plugin = {
-                        "pretty",
-                        "json:target/cucumber-report/cucumber.json",
-                        "html:target/cucumber-report/cucumber.html",
-                        "junit:target/cucumber-report/cucumber.xml"}
+                        "pretty"}
         )
 )
 public class TestRunner {
