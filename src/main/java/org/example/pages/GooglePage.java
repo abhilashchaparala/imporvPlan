@@ -9,7 +9,7 @@ public class GooglePage extends BasePage{
     BasePage basePage;
     public GooglePage(){
         basePage = new BasePage();
-        page = basePage.initialise();
+        page = basePage.initializw();
     }
 
     public void navigateToGoogle(){
